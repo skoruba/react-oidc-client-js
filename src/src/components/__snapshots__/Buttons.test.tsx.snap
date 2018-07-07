@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buttons renders and matches our snapshot 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-12 text-center"
+    style={
+      Object {
+        "marginTop": "30px",
+      }
+    }
+  >
+    <button
+      className="btn btn-primary btn-login"
+      onClick={[MockFunction]}
+      style={
+        Object {
+          "margin": "10px",
+        }
+      }
+    >
+      Login
+    </button>
+    <button
+      className="btn btn-secondary btn-getuser"
+      onClick={[MockFunction]}
+      style={
+        Object {
+          "margin": "10px",
+        }
+      }
+    >
+      Get User info
+    </button>
+    <button
+      className="btn btn-warning btn-getapi"
+      onClick={[MockFunction]}
+      style={
+        Object {
+          "margin": "10px",
+        }
+      }
+    >
+      Call API
+    </button>
+    <button
+      className="btn btn-success btn-renewtoken"
+      onClick={[MockFunction]}
+      style={
+        Object {
+          "margin": "10px",
+        }
+      }
+    >
+      Renew Token
+    </button>
+    <button
+      className="btn btn-dark btn-logout"
+      onClick={[MockFunction]}
+      style={
+        Object {
+          "margin": "10px",
+        }
+      }
+    >
+      Logout
+    </button>
+  </div>
+</div>
+`;
