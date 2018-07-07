@@ -1,7 +1,7 @@
+import 'babel-polyfill';
 import * as React from 'react';
 import './App.css';
 import Profile from './containers/Profile';
-
 import logo from './logo.svg';
 
 class App extends React.Component {
