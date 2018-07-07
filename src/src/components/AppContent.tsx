@@ -10,6 +10,7 @@ import Buttons from './Buttons';
 export default class AppContent extends React.Component<any, any> {
   public authService: AuthService;
   public apiService: ApiService;
+  private shouldCancel: boolean;
 
   constructor(props: any) {
     super(props);
@@ -17,6 +18,7 @@ export default class AppContent extends React.Component<any, any> {
     this.authService = new AuthService();
     this.apiService = new ApiService();
     this.state = { user: {}, api: {} };
+    this.shouldCancel = false;
   }
 
   public componentDidMount() {
@@ -38,6 +40,10 @@ export default class AppContent extends React.Component<any, any> {
         toastr.error(error);
       });
   };
+
+  public componentWillUnmount() {
+    this.shouldCancel = true;
+  }
 
   public renewToken = () => {
     this.authService
@@ -63,7 +69,9 @@ export default class AppContent extends React.Component<any, any> {
         toastr.info('You are not logged in.');
       }
 
-      this.setState({ user });
+      if (!this.shouldCancel) {
+        this.setState({ user });
+      }
     });
   };
 
