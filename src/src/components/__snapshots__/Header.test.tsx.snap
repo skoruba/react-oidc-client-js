@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders and matches our snapshot 1`] = `
+<header
+  className="App-header"
+>
+  <img
+    alt="logo"
+    className="App-logo"
+    src={undefined}
+  />
+  <h1
+    className="App-title"
+  >
+    React app with oidc-client-js
+  </h1>
+</header>
+`;

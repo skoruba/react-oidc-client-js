@@ -2,14 +2,14 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';
 
-const sessionStorageMock = {
+const storageMock = {
   clear: jest.fn(),
   getItem: jest.fn(),
   setItem: jest.fn()
 };
 
-(global as any).sessionStorage = sessionStorageMock;
-(global as any).localStorage = sessionStorageMock;
+(global as any).sessionStorage = storageMock;
+(global as any).localStorage = storageMock;
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

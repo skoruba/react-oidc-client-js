@@ -1,6 +1,5 @@
 import * as React from 'react';
-import ApiResponse from './ApiResponse';
-import UserProfile from './UserProfile';
+import JsonTreeViewer from './JsonTreeViewer';
 
 export interface IAuthContentProps {
   api: any;
@@ -16,10 +15,10 @@ export default class AuthContent extends React.Component<IAuthContentProps, any>
     return (
       <div className="row">
         <div className="col-md-6">
-          <UserProfile user={this.props.user} shouldExpandNode={this.shouldExpandNode} />
+          <JsonTreeViewer data={this.props.user} title="User Profile" shouldExpandNode={this.shouldExpandNode} />
         </div>
         <div className="col-md-6">
-          <ApiResponse api={this.props.api} shouldExpandNode={this.shouldExpandNode} />
+          <JsonTreeViewer data={this.props.api} title="Api Response" shouldExpandNode={this.shouldExpandNode} />
         </div>
       </div>
     );

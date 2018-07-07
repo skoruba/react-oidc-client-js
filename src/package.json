@@ -3,16 +3,19 @@
   "description": "OpenID Connect (OIDC) javascript client with React",
   "version": "1.0.0",
   "dependencies": {
+    "axios": "0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "4.1.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "oidc-client": "1.5.1",
+    "ramda": "0.25.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts-ts": "2.16.0",
-    "oidc-client": "1.5.1",
-    "axios": "0.18.0",
-    "ramda": "0.25.0",
-    "bootstrap": "4.1.1",
     "react-json-tree": "0.11.0",
-    "toastr": "2.1.4",
-    "babel-polyfill": "^6.26.0"
+    "react-scripts-ts": "2.16.0",
+    "react-test-renderer": "^16.4.1",
+    "toastr": "2.1.4"
   },
   "scripts": {
     "start": "set PORT=4200 && react-scripts-ts start",
@@ -21,13 +24,16 @@
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
+    "@types/axios": "0.14.0",
+    "@types/enzyme": "^3.1.11",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/jest": "^23.1.4",
     "@types/node": "^10.5.2",
-    "@types/react": "^16.4.6",
-    "@types/axios": "0.14.0",
-    "@types/react-dom": "^16.0.6",
     "@types/ramda": "0.25.34",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
     "@types/react-json-tree": "0.6.7",
+    "@types/react-test-renderer": "^16.0.1",
     "@types/toastr": "2.1.35",
     "typescript": "^2.9.2"
   }
