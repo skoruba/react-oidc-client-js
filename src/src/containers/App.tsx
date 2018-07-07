@@ -1,21 +1,19 @@
 import 'babel-polyfill';
 import * as React from 'react';
+import AppContent from '../components/AppContent';
+import Header from '../components/Header';
+import logo from '../logo.svg';
 import './App.css';
-import Profile from './containers/Profile';
-import logo from './logo.svg';
 
 class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React and oidc-client-js</h1>
-        </header>
+        <Header pageTitle="Welcome to React and oidc-client-js" logoSrc={logo} />
         <div className="container-fluid">
           <div className="row">
             <div className="col">
-              <Profile />
+              <AppContent />
             </div>
           </div>
         </div>
