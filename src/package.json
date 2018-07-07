@@ -1,0 +1,33 @@
+{
+  "name": "react-oidc-client-js",
+  "description": "OpenID Connect (OIDC) javascript client with React",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts-ts": "2.16.0",
+    "oidc-client": "1.5.1",
+    "axios": "0.18.0",
+    "ramda": "0.25.0",
+    "bootstrap": "4.1.1",
+    "react-json-tree": "0.11.0",
+    "toastr": "2.1.4"
+  },
+  "scripts": {
+    "start": "set PORT=4200 && react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@types/node": "^10.5.2",
+    "@types/react": "^16.4.6",
+    "@types/axios": "0.14.0",
+    "@types/react-dom": "^16.0.6",
+    "@types/ramda": "0.25.34",
+    "@types/react-json-tree": "0.6.7",
+    "@types/toastr": "2.1.35",
+    "typescript": "^2.9.2"
+  }
+}
