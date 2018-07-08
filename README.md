@@ -10,17 +10,17 @@
 
 # Installation
 
-- Install dependecies - `yarn install`
-
 ## Cloning app
 
 - `git clone https://github.com/skoruba/react-oidc-client-js.git`
 
+## Install dependecies
+
+- Install dependecies - `yarn install`
+
 ## Running app
 
-- The following commands are available:
-
-- `yarn start` - start the develop web server that is running on [http://localhost:4200](http://localhost:4200)
+- `yarn start` - start the web server that is running on [http://localhost:4200](http://localhost:4200)
 
 - The application is connected to OpenID Connect Provider that is running on [https://demo.identityserver.io/](https://demo.identityserver.io/)
   This STS has configured the SPA client that have to running on http://localhost:4200 therefore the sample app will be running on this port `4200`.
