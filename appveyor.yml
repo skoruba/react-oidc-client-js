@@ -17,6 +17,8 @@ test_script:
   - node --version
   - npm --version
   - cd src/
+  - npm install -g create-react-app
+  - npm install
   - npm test
 cache:
   - '%APPDATA%\npm-cache'
