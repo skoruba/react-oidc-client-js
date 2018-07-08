@@ -24,3 +24,7 @@
 
 - The application is connected to OpenID Connect Provider that is running on [https://demo.identityserver.io/](https://demo.identityserver.io/)
   This STS has configured the SPA client that have to running on http://localhost:4200 therefore the sample app will be running on this port `4200`.
+
+## App preview
+
+![Logo](docs/Images/react-oidc-client-screenshot.png)
