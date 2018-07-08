@@ -8,6 +8,9 @@
 
 - The application is based on `create-react-app` - [Create React App with Typescript](https://github.com/wmonk/create-react-app-typescript)
 
+# Project status
+[![Build status](https://ci.appveyor.com/api/projects/status/5ml2f07trcm072a1?svg=true)](https://ci.appveyor.com/project/JanSkoruba/react-oidc-client-js)
+
 # Installation
 
 ## Cloning app
