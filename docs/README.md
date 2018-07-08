@@ -1,3 +1,3 @@
-![Logo](docs/Images/Skoruba-Logo-ReadMe.png)
+![Logo](Images/Skoruba-Logo-ReadMe.png)
 
 # react-oidc-client-js docs
