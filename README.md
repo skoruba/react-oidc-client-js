@@ -22,8 +22,8 @@
 
 - `yarn start` - start the web server that is running on [http://localhost:4200](http://localhost:4200)
 
-- The application is connected to OpenID Connect Provider that is running on [https://demo.identityserver.io/](https://demo.identityserver.io/)
-  This STS has configured the SPA client that have to running on http://localhost:4200 therefore the sample app will be running on this port `4200`.
+- The application is connected to `OpenID Connect Provider` that is running on [https://demo.identityserver.io/](https://demo.identityserver.io/)
+- This STS has configured the SPA client that have to running on http://localhost:4200 therefore the sample app will be running on this port `4200`.
 
 ## App preview
 
