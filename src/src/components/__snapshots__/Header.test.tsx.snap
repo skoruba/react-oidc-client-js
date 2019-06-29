@@ -7,7 +7,7 @@ exports[`Header renders and matches our snapshot 1`] = `
   <img
     alt="logo"
     className="App-logo"
-    src={undefined}
+    src="logo.svg"
   />
   <h1
     className="App-title"
