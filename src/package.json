@@ -1,40 +1,54 @@
 {
   "name": "react-oidc-client-js",
   "description": "OpenID Connect (OIDC) javascript client with React",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "dependencies": {
-    "axios": "0.18.0",
-    "babel-polyfill": "^6.26.0",
-    "bootstrap": "4.1.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "oidc-client": "1.5.1",
-    "ramda": "0.25.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-json-tree": "0.11.0",
-    "react-scripts-ts": "2.16.0",
-    "react-test-renderer": "^16.4.1",
-    "toastr": "2.1.4"
+    "axios": "0.19.0",
+    "core-js": "3.1.4",
+    "bootstrap": "4.3.1",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.14.0",
+    "oidc-client": "1.8.2",
+    "ramda": "0.26.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-json-tree": "0.11.2",
+    "react-scripts": "^3.0.1",
+    "react-test-renderer": "16.8.6",
+    "toastr": "2.1.4",
+    "react-app-polyfill": "1.0.1"
   },
   "scripts": {
-    "start": "set PORT=4200 && react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "start": "set PORT=4200 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "@types/axios": "0.14.0",
-    "@types/enzyme": "^3.1.11",
-    "@types/enzyme-adapter-react-16": "^1.0.2",
-    "@types/jest": "^23.1.4",
-    "@types/node": "^10.5.2",
-    "@types/ramda": "0.25.34",
-    "@types/react": "^16.4.6",
-    "@types/react-dom": "^16.0.6",
-    "@types/react-json-tree": "0.6.7",
-    "@types/react-test-renderer": "^16.0.1",
-    "@types/toastr": "2.1.35",
-    "typescript": "^2.9.2"
+    "@types/enzyme": "3.9.4",
+    "@types/enzyme-adapter-react-16": "1.0.5",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.10",
+    "@types/ramda": "0.26.12",
+    "@types/react": "16.8.22",
+    "@types/react-dom": "16.8.4",
+    "@types/react-json-tree": "0.6.11",
+    "@types/react-test-renderer": "16.8.2",
+    "@types/toastr": "2.1.37",
+    "typescript": "3.4.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
   }
 }

@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import * as React from 'react';
 import AppContent from '../components/AppContent';
 import Header from '../components/Header';

@@ -13,7 +13,7 @@ export class AuthService {
       silent_redirect_uri: `${Constants.clientRoot}silent-renew.html`,
       // tslint:disable-next-line:object-literal-sort-keys
       post_logout_redirect_uri: `${Constants.clientRoot}`,
-      response_type: 'id_token token',
+      response_type: 'code',
       scope: Constants.clientScope
     };
     this.userManager = new UserManager(settings);
@@ -22,7 +22,7 @@ export class AuthService {
     Log.level = Log.INFO;
   }
 
-  public getUser(): Promise<User> {
+  public getUser(): Promise<User | null> {
     return this.userManager.getUser();
   }
 
