@@ -12,7 +12,7 @@
 
     <h1>Authentification callback processing...</h1>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/oidc-client/1.8.2/oidc-client.js"></script>
+    <script src="oidc-client.min.js"></script>
     <script>
         new Oidc.UserManager({ response_mode: "query" }).signinRedirectCallback().then(function () {
             window.location = "index.html";

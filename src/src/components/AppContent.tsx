@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import * as toastr from 'toastr';
+import { ToastContainer, toast } from 'react-toastify';
 import { ApiService } from '../services/ApiService';
 import { AuthService } from '../services/AuthService';
 
@@ -34,10 +34,10 @@ export default class AppContent extends React.Component<any, any> {
       .callApi()
       .then(data => {
         this.setState({ api: data.data });
-        toastr.success('Api return successfully data, check in section - Api response');
+        toast.success('Api return successfully data, check in section - Api response');
       })
       .catch(error => {
-        toastr.error(error);
+        toast.error(error);
       });
   };
 
@@ -49,11 +49,11 @@ export default class AppContent extends React.Component<any, any> {
     this.authService
       .renewToken()
       .then(user => {
-        toastr.success('Token has been sucessfully renewed. :-)');
+        toast.success('Token has been sucessfully renewed. :-)');
         this.getUser();
       })
       .catch(error => {
-        toastr.error(error);
+        toast.error(error);
       });
   };
 
@@ -64,9 +64,9 @@ export default class AppContent extends React.Component<any, any> {
   public getUser = () => {
     this.authService.getUser().then(user => {
       if (user) {
-        toastr.success('User has been successfully loaded from store.');
+        toast.success('User has been successfully loaded from store.');
       } else {
-        toastr.info('You are not logged in.');
+        toast.info('You are not logged in.');
       }
 
       if (!this.shouldCancel) {
@@ -78,6 +78,8 @@ export default class AppContent extends React.Component<any, any> {
   public render() {
     return (
       <>
+        <ToastContainer />
+
         <Buttons
           login={this.login}
           logout={this.logout}
