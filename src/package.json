@@ -3,7 +3,7 @@
   "description": "OpenID Connect (OIDC) javascript client with React",
   "version": "3.0.0",
   "dependencies": {
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "core-js": "3.6.5",
     "bootstrap": "4.5.0",
     "enzyme": "3.11.0",
