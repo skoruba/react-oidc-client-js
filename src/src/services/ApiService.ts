@@ -36,6 +36,6 @@ export class ApiService {
       Authorization: 'Bearer ' + token
     };
 
-    return axios.get(Constants.apiRoot + 'test', { headers });
+    return axios.get(Constants.apiRoot + 'v1/Positions', { headers });
   }
 }
