@@ -19,7 +19,7 @@
     "react-toastify": "6.0.8"
   },
   "scripts": {
-    "start": "set PORT=4200 && react-scripts start",
+    "start": "set PORT=3000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
