@@ -8,12 +8,12 @@ export class AuthService {
   constructor() {
     const settings = {
       authority: process.env.REACT_APP_STS_AUTHORITY,
-      client_id: 'React.Spa',
+      client_id: process.env.REACT_APP_CLIENT_ID,
       redirect_uri: window.location.origin + '/signin-callback.html',
       silent_redirect_uri: window.location.origin + '/silent-renew.html',
       post_logout_redirect_uri: window.location.origin,
-      response_type: 'code',
-      scope: Constants.clientScope
+      response_type: process.env.REACT_APP_RESPONSE_TYPE,
+      scope: process.env.REACT_APP_CLIENT_SCOPE
     };
 
     this.userManager = new UserManager(settings);
