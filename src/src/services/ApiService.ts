@@ -3,7 +3,6 @@ import { AuthService } from './AuthService';
 
 export class ApiService {
   private authService: AuthService;
-
   constructor() {
     this.authService = new AuthService();
   }
