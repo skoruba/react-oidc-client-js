@@ -2,7 +2,6 @@ import { Log, User, UserManager } from 'oidc-client';
 
 export class AuthService {
   public userManager: UserManager;
-
   constructor() {
     const settings = {
       authority: process.env.REACT_APP_STS_AUTHORITY,
