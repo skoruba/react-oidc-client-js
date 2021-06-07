@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Constants } from '../helpers/Constants';
 import { AuthService } from './AuthService';
 
 export class ApiService {
@@ -36,6 +35,6 @@ export class ApiService {
       Authorization: 'Bearer ' + token
     };
 
-    return axios.get(Constants.apiRoot + 'v1/Positions', { headers });
+    return axios.get(process.env.REACT_APP_API_ENDPOINT + 'v1/Positions', { headers });
   }
 }
