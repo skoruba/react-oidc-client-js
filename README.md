@@ -8,8 +8,17 @@
 
 - The application is based on `create-react-app` - [Create React App](https://github.com/facebook/create-react-app)
 
-# Project status
-[![Build status](https://ci.appveyor.com/api/projects/status/5ml2f07trcm072a1?svg=true)](https://ci.appveyor.com/project/JanSkoruba/react-oidc-client-js)
+## ℹ️ Project status: Not maintained
+
+This project is no longer maintained.
+
+It demonstrates a legacy approach where access tokens are stored in
+`localStorage` / `sessionStorage`, which is **no longer considered secure**
+for modern SPA applications.
+
+👉 **Current recommendation:**  
+Use the **Backend for Frontend (BFF) pattern**, where tokens are handled
+server-side and never exposed to the browser.
 
 # Installation
 
