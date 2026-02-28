@@ -14,7 +14,8 @@ export class AuthService {
       // tslint:disable-next-line:object-literal-sort-keys
       post_logout_redirect_uri: `${Constants.clientRoot}`,
       response_type: 'code',
-      scope: Constants.clientScope
+      scope: Constants.clientScope,
+      automaticSilentRenew: true
     };
     this.userManager = new UserManager(settings);
 
