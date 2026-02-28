@@ -1,21 +1,18 @@
 import { Log, User, UserManager } from 'oidc-client';
 
-import { Constants } from '../helpers/Constants';
-
 export class AuthService {
   public userManager: UserManager;
-
   constructor() {
     const settings = {
-      authority: Constants.stsAuthority,
-      client_id: Constants.clientId,
-      redirect_uri: `${Constants.clientRoot}signin-callback.html`,
-      silent_redirect_uri: `${Constants.clientRoot}silent-renew.html`,
-      // tslint:disable-next-line:object-literal-sort-keys
-      post_logout_redirect_uri: `${Constants.clientRoot}`,
-      response_type: 'code',
-      scope: Constants.clientScope
+      authority: process.env.REACT_APP_STS_AUTHORITY,
+      client_id: process.env.REACT_APP_CLIENT_ID,
+      redirect_uri: window.location.origin + '/signin-callback.html',
+      silent_redirect_uri: window.location.origin + '/silent-renew.html',
+      post_logout_redirect_uri: window.location.origin,
+      response_type: process.env.REACT_APP_RESPONSE_TYPE,
+      scope: process.env.REACT_APP_CLIENT_SCOPE
     };
+
     this.userManager = new UserManager(settings);
 
     Log.logger = console;

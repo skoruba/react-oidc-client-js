@@ -1,10 +1,8 @@
 import axios from 'axios';
-import { Constants } from '../helpers/Constants';
 import { AuthService } from './AuthService';
 
 export class ApiService {
   private authService: AuthService;
-
   constructor() {
     this.authService = new AuthService();
   }
@@ -36,6 +34,6 @@ export class ApiService {
       Authorization: 'Bearer ' + token
     };
 
-    return axios.get(Constants.apiRoot + 'test', { headers });
+    return axios.get(process.env.REACT_APP_API_ENDPOINT + 'v1/Positions', { headers });
   }
 }
